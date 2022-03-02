@@ -41,8 +41,12 @@ h2 {
     /*border: 1px gray solid;*/
     box-shadow: 20px 10px 45px 10px #d9d8d8;
 	/*background-color:rgba(255,255,255,0.3);*/
-    
 }
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+    
 
 /* Top Layer */
 .turquoise {
@@ -196,6 +200,15 @@ p.white {
 
 }
 .column1 {
+ float: left;
+ font-family: "Montserrat",sans-serif;
+ font-size: 12px;
+ font-weight: 400;    
+ color: #363636;    
+ width: 33.3%;
+ padding: 10px;
+}
+.form {
  float: left;
  font-family: "Montserrat",sans-serif;
  font-size: 12px;
@@ -394,4 +407,61 @@ nav ul li {
 	padding-left: 0px;
 }
 
+}
+
+.three-column {
+	font-size: 0; /*remove white space*/
+  }
+  
+  .section {
+	font-size: 16px; /*reset font size*/
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3333%;
+	box-sizing: border-box;
+	text-align: center;
+	padding-bottom: 30px;
+  }
+.border-right{
+	border-right: 1px solid black;
+}
+  
+  @media (max-width: 950px) { /*breakpoint*/
+	.section {
+	  display: block;
+	  width: auto;
+	}
+  }
+
+.no-bullets {
+	list-style-type: none;
+	padding: 0; 
+	margin: 0;
+  }
+.column-heading {
+	text-align: center; 
+	font-size: 16px; 
+	text-decoration: underline; 
+	text-underline-offset: 3px;
+	font-weight: bold;
+}
+
+.report-links{
+	color: #4c2a06;
+	line-height: 2.0em;
+	text-decoration: none;
+}
+
+ .report-links:hover{
+	color: #4c2a06;
+    text-decoration: underline;
+}
+
+.reports-heading {
+	text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: bold;
+	padding: 20px; 
 }
